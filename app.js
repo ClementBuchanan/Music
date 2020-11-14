@@ -37,3 +37,26 @@ break;
 } 
 }
 guessingGame();
+
+function addPicture1(potatoe){
+    let numberPictures = prompt('How many pictures do you want to see?');
+    // want to use a for loop
+    for(let i = 0; i < numberPictures; i++){
+        console.log('The value of i is : ' + i);
+    document.write('<img src="' + potatoe + '">');
+    }
+}
+addPicture1();
+
+function addPicture(){
+    let url1 = "https://i.etsystatic.com/7939429/r/il/e74e39/2324926878/il_794xN.2324926878_8pa7.jpghttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinthttps://www.google.com/url?sa=i&url=https%3A%2F%2Ftimesofindia.indiatimes.com%2Flife-style%2Frelationships%2Fpets%2F5-things-that-scare-and-stress-your-cat%2Farticleshow%2F67586673.cms&psig=AOvVaw3_JYsleAUNHbFtHKhjmhRD&ust=1605412919549000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIDtibKTge0CFQAAAAAdAAAAABADerest.com%2Fpin%2F177470041551303885%2F&psig=AOvVaw0-WZ50J0T1OL4oW1ApwbMw&ust=1605412766967000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjW3eeSge0CFQAAAAAdAAAAABAD";
+    let url2 = "https://www.denofgeek.com/wp-content/uploads/2015/05/star-trek-original-crew-star-trek-the-movies-10https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.medicalnewstoday.com%2Farticles%2F322868&psig=AOvVaw1blDNesth2MYqc7XOAk8_6&ust=1605412891772000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIC8iJyTge0CFQAAAAAdAAAAABAD920795-1000-715.jpg"
+    let sw = prompt('Do you like sw or st?')
+    console.log(sw);
+    if (sw == 'sw'){
+        addPicture1(url1);
+    } else {
+        addPicture1(url2);
+    }
+}
+addPicture();
